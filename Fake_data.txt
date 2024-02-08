@@ -1,0 +1,17 @@
+ID	steroid	dosage	start.date	end.date
+Patient1	Prednisolone	2.5mg daily	08/2015	10/2015
+Patient1	Prednisolone	5MG /day	12/2015	01/2016
+Patient2	Methylprednisolone	120mg once only	10/2014	10/2014
+Patient3	prednisilone	1mg /die	09/2016	08/2016
+Patient4	Betamethasone	1.5mg	01/2014	01/2014
+Patient5	Batamethasone	1.5 MG	02/2015	02/2015
+Patient5	Prdenisolone	5mg 7 days out of 7	03/2014	03/2014
+Patient6	MethylPrednisolone	120mgs	08/2016	08/2016
+Patient6	methyl-prednisolone	120mg IM	10/2018	10/2018
+Patient7	Prednisolone	5 OD	02/2019	05/2019
+Patient7	Prednisolone	10mg/d	12/2017	03/2018
+Patient8	Methylprednisolone	IM 120mg	05/2016	05/2016
+Patient9	Prednisolone	2.5 a day	08/2018	12/2018
+Patient10	pridnisolone	20mg/day	02/2016	04/2016
+Patient11	Betamethasone	5	11/2017	11/2017
+Patient12	betamethasone	2.5mg	06/2018	06/2018
