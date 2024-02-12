@@ -1,0 +1,69 @@
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:11:25: [22m[34mstyle: [39m[trailing_whitespace_linter] [1mTrailing whitespace is superfluous.[22m
+data <- add_column(data, 
+                        ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:17:81: [22m[34mstyle: [39m[line_length_linter] [1mLines should not be more than 80 characters. This line is 83 characters.[22m
+data$steroid.clean[which(data$steroid.clean == "batamethasone")] <- "betamethasone"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:23:1: [22m[34mstyle: [39m[object_name_linter] [1mVariable and function name style should match snake_case or symbols.[22m
+pred.mistake <- c("prdenisolone", "prednisilone", "pridnisolone")
+^~~~~~~~~~~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:25:81: [22m[34mstyle: [39m[line_length_linter] [1mLines should not be more than 80 characters. This line is 81 characters.[22m
+data$steroid.clean[which(data$steroid.clean %in% pred.mistake)] <- "prednisolone"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:35:25: [22m[34mstyle: [39m[trailing_whitespace_linter] [1mTrailing whitespace is superfluous.[22m
+data <- add_column(data, 
+                        ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:64:45: [22m[34mstyle: [39m[trailing_whitespace_linter] [1mTrailing whitespace is superfluous.[22m
+#first and end date if same month is 28 days 
+                                            ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:69:4: [22m[34mstyle: [39m[spaces_left_parentheses_linter] [1mPlace a space before left parenthesis, except in a function call.[22m
+for(i in 1:nrow(data)){
+   ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:69:10: [22m[35mwarning: [39m[seq_linter] [1m1:nrow(...) is likely to be wrong in the empty edge case. Use seq_len(nrow(...)) instead.[22m
+for(i in 1:nrow(data)){
+         ^~~~~~~~~~~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:70:81: [22m[34mstyle: [39m[line_length_linter] [1mLines should not be more than 80 characters. This line is 81 characters.[22m
+  data$start.month[i] <- as.numeric(str_split(data$start.date[i], "\\/")[[1]][1])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:75:4: [22m[34mstyle: [39m[spaces_left_parentheses_linter] [1mPlace a space before left parenthesis, except in a function call.[22m
+for(i in 1:nrow(data)){
+   ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:75:10: [22m[35mwarning: [39m[seq_linter] [1m1:nrow(...) is likely to be wrong in the empty edge case. Use seq_len(nrow(...)) instead.[22m
+for(i in 1:nrow(data)){
+         ^~~~~~~~~~~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:81:4: [22m[34mstyle: [39m[spaces_left_parentheses_linter] [1mPlace a space before left parenthesis, except in a function call.[22m
+for(i in 1:nrow(data)){
+   ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:81:10: [22m[35mwarning: [39m[seq_linter] [1m1:nrow(...) is likely to be wrong in the empty edge case. Use seq_len(nrow(...)) instead.[22m
+for(i in 1:nrow(data)){
+         ^~~~~~~~~~~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:87:4: [22m[34mstyle: [39m[spaces_left_parentheses_linter] [1mPlace a space before left parenthesis, except in a function call.[22m
+for(i in 1:nrow(data)){
+   ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:87:10: [22m[35mwarning: [39m[seq_linter] [1m1:nrow(...) is likely to be wrong in the empty edge case. Use seq_len(nrow(...)) instead.[22m
+for(i in 1:nrow(data)){
+         ^~~~~~~~~~~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:91:81: [22m[34mstyle: [39m[line_length_linter] [1mLines should not be more than 80 characters. This line is 98 characters.[22m
+data$duration <- (data$end.year * 12 + data$end.month) - (data$start.year * 12 + data$start.month)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:99:39: [22m[34mstyle: [39m[trailing_whitespace_linter] [1mTrailing whitespace is superfluous.[22m
+#0 is really one month - add one month 
+                                      ^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:104:81: [22m[34mstyle: [39m[line_length_linter] [1mLines should not be more than 80 characters. This line is 92 characters.[22m
+data$total.dosage[which(data$daily == "no")] <- data$dosage.value[which(data$daily == "no")]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:107:1: [22m[34mstyle: [39m[trailing_blank_lines_linter] [1mTrailing blank lines are superfluous.[22m
+
+^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:108:1: [22m[34mstyle: [39m[trailing_blank_lines_linter] [1mTrailing blank lines are superfluous.[22m
+
+^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:109:1: [22m[34mstyle: [39m[trailing_blank_lines_linter] [1mTrailing blank lines are superfluous.[22m
+
+^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:110:1: [22m[34mstyle: [39m[trailing_blank_lines_linter] [1mTrailing blank lines are superfluous.[22m
+
+^
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/orig_Data_clean.R:111:1: [22m[34mstyle: [39m[trailing_blank_lines_linter] [1mTrailing blank lines are superfluous.[22m
+
+^
