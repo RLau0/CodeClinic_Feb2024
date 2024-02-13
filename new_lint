@@ -1,0 +1,3 @@
+[1m/home/grg/Dev/breksta/CodeClinic_Feb2024/Data_clean.R:28:81: [22m[34mstyle: [39m[line_length_linter] [1mLines should not be more than 80 characters. This line is 95 characters.[22m
+# https://stackoverflow.com/questions/9503896/create-end-of-the-month-date-from-a-date-variable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
